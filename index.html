@@ -61,7 +61,7 @@
 </header>
 
 <div class="container">
-    <div class = "row">
+    <div class = "row row-content">
         <div class="col-sm-4 col-md-3">
             <h3>Our famous chocolates</h3>
         </div>
@@ -79,7 +79,7 @@
             </div>  
         </div>
     </div>
-     <div class = "row">
+     <div class = "row row-content">
         <div class="col-sm-4 col-md-3">
             <h3>WEEK’S OFFER</h3>
         </div>
@@ -97,7 +97,7 @@
             </div>
         </div>
     </div>
-    <div class ="row">
+    <div class ="row row-content">
         <div class="col-sm-4 col-md-3">       
             <h3>Meet our  Specialists</h3>
         </div>
@@ -112,62 +112,66 @@
                         </div>
                 </div>
         </div>
-        <div class="container" id="basket">
-           <div class="card text-white bg-warning mb-3 " style="max-width: 30rem ">
-                            <h5 class="card-title card-header">Reserve your baskets</h5>
-                            <div class="card-body clr">
-                                <div class="card-body font-light">
-                                <div class="row">
-                                <form class="card-text input-group addons ">
-                                    <div>
-                                    <p>Numbers of basket&nbsp;&nbsp;&nbsp;</p>
-                                    </div>
-                                <div class="form-check col">
+    </div>
+
+    <div class="row row-content justify-content-center" id="basket">
+        <div class="col-12 col-sm-8">
+        <div class="card border-default">
+            <div class="card text-white bg-warning text-white">
+                <h5 class="card-header">Reserve your baskets</h5>
+                    <div class="card-body clr">
+                        <div class="card-body font-light">
+                            
+                          <form class="form-group row">
+                                   <label for="optradio" class="col-12 col-sm-3 col-form-label" >
+                                       Number of baskets
+                                   </label>
+                                <div class="form-check form-check-inline">
                                     <input class="form-check-input  " name="group100" type="radio" id="radio100">
                                     <label class="form-check-label" for="radio100">1</label>
                                 </div>
-                                <div class="form-check col">
+                                <div class="form-check form-check-inline">
                                     <input class="form-check-input  " name="group100" type="radio" id="radio100">
                                     <label class="form-check-label" for="radio100">2</label>
                                 </div>
-                                <div class="former-check col">
+                                <div class="former-check form-check-inline">
                                     <input class="form-check-input" name="group100" type="radio" id="radio100">
                                     <label class="form-check-label" for="radio100">3</label>
                                 </div>
-                                <div class="former-check col">
+                                <div class="former-check form-check-inline">
                                     <input class="form-check-input" name="group100" type="radio" id="radio100">
                                     <label class="form-check-label" for="radio100">4</label>
                                 </div>
-                                <div class ="former-check col">
+                                <div class ="former-check form-check-inline">
                                     <input class="form-check-input" name="group100" type="radio" id="radio100">
                                     <label class="form-check-label" for="radio100">5</label>
                                 </div>
-                                <div class="former-check ">
+                                <div class="former-check form-check-inline">
                                     <input class="form-check-input" name="group100" type="radio" id="radio100">
                                     <label class="form-check-label" for="radio100">6</label>
                                 </div>
-                                <div class="row">
-                                 
-                                    <p>&nbsp;&nbsp;&nbsp;Date-Time&nbsp;&nbsp;&nbsp;</p>
-                                  
-                                     
-                                    <span class="fa fa-calendar"></span>
-                                    <input type = "date" placeholder="dd----yyyy">
-                                    <i class="fa fa-clock-o"></i>
-                                    <input type = "time">
-                                    
-                                    
-                                    </div>
+                               <div class="form-group row">
+                                   <label class="col-12 col-sm-3 col-form-label">Date and Time</label>
+                                   <div class="input-group col-12 col-sm-4">
+                                       <div class="input-group-prepend">
+                                           <span class="input-group-text" id="date"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                       </div>
+                                        <input type="date" class="form-control" placeholder="Date" id="date">
                                 </div>
-                                </div>
+                                <div class="input-group col-12 col-sm-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="date"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                        </div>
+                                         <input type="time" class="form-control" placeholder="Time" id="time">
+                                 </div>
                                 <a href="#" class="btn btn-primary">Reserve</a>
-                              </form>
-                              
-                            </div>
-                        </div>
-                    </div>
+                        </form>
+                           
+                           </div>
+                       </div>
+                   </div>
                 </div>
-             </div>
+            </div>
         </div>
     </div>
 </div>
@@ -175,47 +179,48 @@
         
     
 
-<footer class = "footer">
-    <div class="container">
-        <div class="row">           
-            <div class="col-5 offset-1 col-sm-2">
-                <h5>Links</h5>
-                <ul  class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-sm-5">
-                <h5>Our Address</h5>
+<footer class="footer"> 
+        <div class="container">   <!-- THE CONTAINER -->
+            <div class="row">     <!-- ROW -->       
+                <div class="col-5 offset-1 col-sm-2">
+                    <h2>Links</h2>
+                        <ul class = "list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href ="#">Contact</a></li>
+                        </ul>
+                    </div>
+        <div class="col-6 col-sm-5">
+            <h2>Our Address</h2>
                 <address>
-                        121, Clear Wave Road<br>
-                        Clear Wave Road, Aloha<br>
-                        HAWAII<br>
-                        Tel.: +987 6543 2100<br>
-                        Fax: +987 6543 2101<br>
-                        Email: <a href="mailto:chocolat@nomail.net">chocolat@nomail.net</a>
-		        </address>
-            </div>
-        <div class="col col sm-4">
-                 <div>
-                    <a href="http://google.com/+">Google+</a>
-                    <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                    <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                    <a href="http://twitter.com/">Twitter</a>
-                    <a href="http://youtube.com/">YouTube</a>
-                    <a href="mailto:">Mail</a>
-                 </div>
-                </div>
-    </div>
-    <div class = "row">             
-        <div class ="col-auto">
-            <p> &copy; Copyright 2018 Le Chocolat</p>
+                    121, Clear Wave Road<br>
+                    Clear Wave Road, Aloha<br>
+                    HAWAII<br>
+                    Tel.: +987 6543 2100<br>
+                    Fax: +987 6543 2101<br>
+                    Email: <a href="mailto:chocolat@nomail.net">chocolat@nomail.net</a>
+                </address>
+        </div>
+    
+        <div class="col col-sm-4"> 
+            <a href="http://google.com/+">Google+</a>
+            <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
+            <a href="http://www.linkedin.com/in/">LinkedIn</a>
+            <a href="http://twitter.com/">Twitter</a>
+            <a href="http://youtube.com/">YouTube</a>
+            <a href="mailto:">Mail</a>
         </div>
     </div>
-  </div>
-</footer>
+    
+    <div class = "row">   <!--ROW-->          
+        <div class ="col-auto">       
+            <p> &copy; Copyright 2018 Le Chocolat</p>
+            </div>
+    </div>
+</div>
+    
+    </footer>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
