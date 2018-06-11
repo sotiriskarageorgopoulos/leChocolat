@@ -104,12 +104,87 @@
                 <img src="images/logo.png" class="img-fluid">
             </div>
             <div class="col col-sm">
-                <a type="button" class="btn btn-warning btn-sm btn-block"
-                data-toggle="tooltip" data-html="true" 
-                title="Or Call us at <br><strong>+ 987 6543 2100</strong>"
-                data-placement="bottom" href="#basket">
-                Reserve your baskets
-              </a>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#basket">
+                 Reserve your baskets
+                  </button>
+              <!-- The Modal -->
+              <div class="modal fade" id="basket" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title lbl" id="exampleModalLabel">Reserve your basket</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-group row">
+                            <label for="optradio" class="col-12 col-sm-3 " >
+                                Numbers of baskets
+                            </label>
+                         <div class="form-check form-check-inline">
+                             <input class="form-check-input  " name="group100" type="radio" id="radio100">
+                             <label class="form-check-label" for="radio100">1</label>
+                         </div>
+                         <div class="form-check form-check-inline">
+                             <input class="form-check-input  " name="group100" type="radio" id="radio100">
+                             <label class="form-check-label" for="radio100">2</label>
+                         </div>
+                         <div class="former-check form-check-inline">
+                             <input class="form-check-input" name="group100" type="radio" id="radio100">
+                             <label class="form-check-label" for="radio100">3</label>
+                         </div>
+                         <div class="former-check form-check-inline">
+                             <input class="form-check-input" name="group100" type="radio" id="radio100">
+                             <label class="form-check-label" for="radio100">4</label>
+                         </div>
+                         <div class ="former-check form-check-inline">
+                             <input class="form-check-input" name="group100" type="radio" id="radio100">
+                             <label class="form-check-label" for="radio100">5</label>
+                         </div>
+                         <div class="former-check form-check-inline">
+                             <input class="form-check-input" name="group100" type="radio" id="radio100">
+                             <label class="form-check-label" for="radio100">6</label>
+                         </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-sm-3 col-form-label">&nbsp;&nbsp;&nbsp;Date and Time</label>
+                            <div class="input-group col-12 col-sm-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="date"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                </div>
+                                 <input type="date" class="form-control" placeholder="Date" id="date">
+                         </div>
+                         <div class="input-group col-12 col-sm-4">
+                                 <div class="input-group-prepend">
+                                     <span class="input-group-text" id="date"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                 </div>
+                                  <input type="time" class="form-control" placeholder="Time" id="time">
+                          </div>
+                          
+                          <div class="input-group col-12 col-sm-4">
+                            <label class="col-12 col-sm-3 col-form-label">Home Delivery</label> 
+                          </div>
+                          <div class="form-group row">
+                          <div class="input-group col-12 col-sm-4">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                       
+                                    <button type="button" class="btn btn-success btn-xl" >Yes</button>
+                                    <button type="button" class="btn btn-danger btn-xl" >No</button>
+                              </div>
+                         </div>
+                        </div>
+                        </div>
+                 </form>
+                  
+                </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div> 
         </div>
     </div>
@@ -222,68 +297,8 @@
                 </div>
         </div>
     </div>
+</div>
 
-    <div class="row row-content justify-content-center" id="basket">
-        <div class="col-12 col-sm-8">
-        <div class="card border-default">
-            <div class="card text-white bg-warning text-white">
-                <h5 class="card-header">Reserve your baskets</h5>
-                    <div class="card-body clr">
-                        <div class="card-body font-light">
-                            
-                          <form class="form-group row">
-                                   <label for="optradio" class="col-12 col-sm-3 col-form-label" >
-                                       Number of baskets
-                                   </label>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input  " name="group100" type="radio" id="radio100">
-                                    <label class="form-check-label" for="radio100">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input  " name="group100" type="radio" id="radio100">
-                                    <label class="form-check-label" for="radio100">2</label>
-                                </div>
-                                <div class="former-check form-check-inline">
-                                    <input class="form-check-input" name="group100" type="radio" id="radio100">
-                                    <label class="form-check-label" for="radio100">3</label>
-                                </div>
-                                <div class="former-check form-check-inline">
-                                    <input class="form-check-input" name="group100" type="radio" id="radio100">
-                                    <label class="form-check-label" for="radio100">4</label>
-                                </div>
-                                <div class ="former-check form-check-inline">
-                                    <input class="form-check-input" name="group100" type="radio" id="radio100">
-                                    <label class="form-check-label" for="radio100">5</label>
-                                </div>
-                                <div class="former-check form-check-inline">
-                                    <input class="form-check-input" name="group100" type="radio" id="radio100">
-                                    <label class="form-check-label" for="radio100">6</label>
-                                </div>
-                               <div class="form-group row">
-                                   <label class="col-12 col-sm-3 col-form-label">Date and Time</label>
-                                   <div class="input-group col-12 col-sm-4">
-                                       <div class="input-group-prepend">
-                                           <span class="input-group-text" id="date"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                                       </div>
-                                        <input type="date" class="form-control" placeholder="Date" id="date">
-                                </div>
-                                <div class="input-group col-12 col-sm-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="date"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                                        </div>
-                                         <input type="time" class="form-control" placeholder="Time" id="time">
-                                 </div>
-                                <a href="#" class="btn btn-primary">Reserve</a>
-                        </form>
-                           
-                           </div>
-                       </div>
-                   </div>
-                </div>
-            </div>
-    </div>
-</div>
-</div>
         
         
     
@@ -336,11 +351,7 @@
 <script src="node_modules/tether/dist/js/tether.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
-    $(function () {
-       $('[data-toggle="tooltip"]').tooltip()
-     })
-   </script>
+
 </body>
 
 </html>

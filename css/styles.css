@@ -42,10 +42,6 @@ body{
 }
 tr:hover {background-color:#dbb08db0!important}
 
-.clr{
-    background-color: white;
-    color : black;
-}
 .tab-content {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -63,4 +59,23 @@ tr:hover {background-color:#dbb08db0!important}
     top: 0;
     left: 0;
     min-height: 300px;
+}
+form {
+    color: #0f0f0f;
+}
+
+.lbl{
+    color: #0f0f0f;  
+}
+
+.modal-dialog {
+    width: 1000px;
+    height:700px /*change the size of modal*/;
+}
+
+.btn-xl {
+    margin-top: 20px;
+    font-size: 10px;
+    border-radius: 10px;
+    width:50px;    /*Specify your width here*/
 }
