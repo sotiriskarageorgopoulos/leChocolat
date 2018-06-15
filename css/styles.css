@@ -79,3 +79,22 @@ form {
     border-radius: 10px;
     width:50px;    /*Specify your width here*/
 }
+
+#carouselButtons {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.head2{
+    margin-top: 40px;
+}
+
+.head1{
+    text-align: center;
+}
+.head3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
